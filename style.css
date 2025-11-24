@@ -1,0 +1,205 @@
+/* 1. DEFINE YOUR CUSTOM FONT */
+@font-face {
+  font-family: 'League Gothic';
+  src: url('LeagueGothic-Regular-VariableFont_wdth.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 2. CREATE A UTILITY CLASS FOR THE FONT */
+.font-league-gothic {
+  font-family: 'League Gothic', sans-serif;
+  letter-spacing: 0.05em; /* Added for a bit more spacing */
+}
+/*
+  =====================================================
+  1. DEFINE YOUR CUSTOM FONT
+  This loads the font file from your repository.
+  =====================================================
+*/
+@font-face {
+  font-family: 'League Gothic';
+  src: url('LeagueGothic-Regular-VariableFont_wdth.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+  =====================================================
+  2. CREATE A UTILITY CLASS FOR THE FONT
+  We can now apply this class to any element.
+  =====================================================
+*/
+.font-league-gothic {
+  font-family: 'League Gothic', sans-serif;
+  letter-spacing: 0.05em; /* Added for a bit more spacing */
+}
+
+
+/* This file contains custom CSS. */
+/* Most styling is done with Tailwind classes in index.html. */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Bilingual Toggle CSS 
+  - By default, show English (lang-en) and hide Swahili (lang-sw)
+*/
+.lang-sw {
+    display: none;
+}
+
+/* When the 'show-sw' class is added to the <html> tag:
+  - Hide English (lang-en)
+  - Show Swahili (lang-sw)
+*/
+html.show-sw .lang-en {
+    display: none;
+}
+
+html.show-sw .lang-sw {
+    /* Use 'inline-block' for elements that should flow with text, */
+    /* like the text spans. */
+    display: inline-block;
+}
+
+/* Use 'block' for elements that should be on their own line, 
+  like headings or paragraphs (if they were separate).
+  'inline-block' is safer for general use inside other elements.
+*/
+
+/* Fix for table rows if you add them later */
+html.show-sw .lang-en-table-row {
+  display: none;
+}
+html.show-sw .lang-sw-table-row {
+  display: table-row;
+}
+
+/* =====================================================
+  Custom Product Card Styles
+  (To match your screenshot)
+  =====================================================
+*/
+
+.whatsapp-button {
+  /* Default (light mode) styles */
+  background-color: #1e3a8a; /* This is the "Oxford Blue" color */
+  color: white;
+  font-size: 0.875rem; /* 14px */
+  font-weight: 700;
+  padding: 0.5rem 1rem; /* This creates the height and width */
+  border-radius: 9999px; /* This makes it rounded */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms ease-in-out;
+  fill: currentColor; /* This makes the WhatsApp icon white */
+}
+
+/* Dark mode styles */
+html.dark .whatsapp-button {
+  background-color: #1e40af; /* A slightly lighter blue for dark mode */
+}
+
+/* Hover styles */
+.whatsapp-button:hover {
+  background-color: #1d4ed8; /* A brighter blue when you hover */
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+/* Dark mode hover styles */
+html.dark .whatsapp-button:hover {
+  background-color: #2563eb; /* A brighter blue for dark mode hover */
+}
+/* =====================================================
+  NEW SLIDER STYLES
+  =====================================================
+*/
+.slider-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* This makes the image cover the area without stretching */
+    object-fit: cover; 
+    z-index: 1; /* 1. The image is at the back */
+}
+
+.slider-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* This is a 40% black tint. Change 0.4 to 0.6 for darker */
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 2; /* 2. The overlay is on top of the image */
+}
+.slider-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    display: none; /* Hide slides by default */
+    transition: opacity 0.7s ease-in-out; /* Fade effect */
+}
+
+.slider-item.active {
+    opacity: 1;
+    display: block; /* Show the active slide */
+}
+
+.slider-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 90%;
+    z-index: 3; /* 3. The text is on top of everything */
+}
+
+/* Make the button look right in CSS */
+.slider-button {
+  background-color: white;
+  color: #3730a3; /* indigo-800 */
+  font-weight: 700;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  transition: all 150ms ease-in-out;
+}
+
+.slider-button:hover {
+  background-color: #e0e7ff; /* indigo-100 */
+}
+
+.slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #D1D5DB; /* gray-300 */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slider-dot.active {
+    background-color: #3B82F6; /* blue-500 */
+}
+
+html.dark .slider-dot {
+  background-color: #4B5563; /* gray-600 */
+}
+
+html.dark .slider-dot.active {
+  background-color: #60A5FA; /* blue-400 */
+}

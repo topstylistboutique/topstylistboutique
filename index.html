@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>TOP STYLIST BOUTIQUE-Official-website</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="script.js" defer></script>
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            primary: '#e0f2fe',
+                            secondary: '#0ea5e9',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-13526HLJM3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-13526HLJM3');
+    </script>
+</head>
+
+<body class="bg-black dark:bg-gray-900 text-white dark:text-gray-200 transition-colors duration-300">
+
+    <header class="sticky top-4 z-50">
+        <nav class="container mx-auto max-w-5x1 mt-4 px-4">
+            <div class="flex items-center justify-between bg-white/70 dark:bg-gray-800/70 backdrop-blur-lg shadow-lg rounded-full px-4 sm:px-6 py-3 sm:py-5">
+                
+                <div class="flex items-center space-x-2 sm:space-x-3">
+                    <a href="#" aria-label="Believer Collections Homepage">
+                        <img src="images/logo.png" alt="Believer Collections Logo" class="h-10 sm:h-14 w-10 sm:w-14 rounded-full object-cover">
+                    </a>
+                    
+                    <span class="font-bold text-xl sm:text-3xl text-gray-800 dark:text-white uppercase font-league-gothic">
+                        TOP STYLIST BOUTIQUE-Official
+                    </span>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    
+                    <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg p-2">
+                        <svg id="theme-toggle-dark-icon" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM10 16a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM3.05 4.536a1 1 0 011.414 0l.707.707a1 1 0 11-1.414 1.414l-.707-.707a1 1 0 010-1.414zM16.95 15.464a1 1 0 01-1.414 0l-.707-.707a1 1 0 111.414-1.414l.707.707a1 1 0 010 1.414zM4.536 16.95a1 1 0 010-1.414l.707-.707a1 1 0 111.414 1.414l-.707.707a1 1 0 01-1.414 0z"></path></svg>
+                    </button>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto max-w-5xl p-4">
+
+        <section class="my-8">
+            <div id="banner-slider" class="relative rounded-2xl shadow-xl overflow-hidden" style="height: 300px;">
+
+                <div class="slider-item active">
+                    <img src="images/ms1.jpg" alt="New Collections" class="slider-bg-image">
+                    <div class="slider-overlay"></div>
+                    <div class="slider-content">
+                        <h2 class="text-4xl font-bold mb-3">New Collections</h2>
+                        <p class="text-lg text-white mb-6">Discover the latest collections.</p>
+                        <a href="#featured-products" class="slider-button">Shop Now</a>
+                    </div>
+                </div>
+                
+                <div class="slider-item">
+                    <img src="images/wm5.jpg" alt="Flash Sale" class="slider-bg-image">
+                    <div class="slider-overlay"></div>
+                    <div class="slider-content">
+                        <h2 class="text-4xl font-bold mb-3">Flash Sale</h2>
+                        <p class="text-lg text-white mb-6">Get up to 30% off on select items.</p>
+                        <a href="women.html" class="slider-button">Shop Women</a>
+                    </div>
+                </div>
+                
+                <div class="slider-item">
+                    <img src="images/mnshs1.jpg" alt="Men's Style" class="slider-bg-image">
+                    <div class="slider-overlay"></div>
+                    <div class="slider-content">
+                        <h2 class="text-4xl font-bold mb-3">Men's Style</h2>
+                        <p class="text-lg text-white mb-6">New shirts and shoes available.</p>
+                        <a href="men.html" class="slider-button">Shop Men</a>
+                    </div>
+                </div>
+
+                <div id="slider-dots-container" class="flex justify-center space-x-2 mt-4">
+                    </div>
+            </div>
+        </section>
+
+        <section class="my-12">
+            <h2 class="text-3xl font-bold text-center mb-8">Our Categories</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <a href="women.html" class="block bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow text-gray-900 dark:text-gray-400">
+                    <h3 class="text-xl font-semibold mb-2">Women</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Clothes & Shoes</p>
+                </a>
+                
+                <a href="men.html" class="block bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow text-gray-900 dark:text-gray-400">
+                    <h3 class="text-xl font-semibold mb-2">Men</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Clothes & Shoes</p>
+                </a>
+                
+                <a href="baby.html" class="block bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow text-gray-900 dark:text-gray-400">
+                    <h3 class="text-xl font-semibold mb-2">Babies</h3>
+                    <p class="text-gray-600 dark:text-gray-400">Clothes & Shoes</p>
+                </a>
+            </div>
+        </section>
+
+        <div class="space-y-12">
+
+            <section id="featured-products">
+                <h3 class="text-2xl font-bold mb-2">Featured Products</h3>
+                <hr class="border-gray-300 dark:border-gray-700 mb-6">
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                    
+                    <div class="product-card bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden text-gray-900 dark:text-gray-200">
+                        <div class="aspect-square bg-gray-200 dark:bg-gray-700">
+                            <img src="images/bb1.jpg" alt="Product" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4">
+                            <div class="h-24">
+                                <h4 class="font-semibold truncate">Baby's Cloth Set-White</h4>
+                                <p class="text-green-600 dark:text-green-400 font-bold mb-3">TZS 35,000-TZS 45,000</p>
+                            </div>
+                            <a href="https://wa.me/256783916256?text=Hello%2C%20I'm%20interested%20in%3A%0A%0A*Product%3A*%20Cargo%20Pants(Kids)%201%0A*Price%3A*%20%20,000%0A*Image%3A*%20https%3A%2F%2Fplacehold.co%2F300x300%2Ff0f0f0%2F999%3Ftext%3DProduct%2B1" target="_blank" class="whatsapp-button">
+                                <span>Order</span>
+                                <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.504.658.67-2.431-.155-.248a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.599 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.T-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product-card bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden text-gray-900 dark:text-gray-200">
+                        <div class="aspect-square bg-gray-200 dark:bg-gray-700">
+                            <img src="images/bb3.jpg" alt="Product" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4">
+                            <div class="h-24">
+                                <h4 class="font-semibold truncate">Cargo Pants(kids)</h4>
+                                <p class="text-green-600 dark:text-green-400 font-bold mb-3">TZS 20,000</p>
+                            </div>
+                            <a href="https://wa.me/256783916256?text=Hello%2C%20I'm%20interested%20in%3A%0A%0A*Product%3A*%20Cargo%20Pants(Kids)%201%0A*Price%3A*%20%20,000%0A*Image%3A*%20https%3A%2F%2Fplacehold.co%2F300x300%2Ff0f0f0%2F999%3Ftext%3DProduct%2B1" target="_blank" class="whatsapp-button">
+                                <span>Order</span>
+                                <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.504.658.67-2.431-.155-.248a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.599 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.T-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product-card bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden text-gray-900 dark:text-gray-200">
+                        <div class="aspect-square bg-gray-200 dark:bg-gray-700">
+                            <img src="images/bb5.jpg" alt="Product" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4">
+                            <div class="h-24">
+                                <h4 class="font-semibold truncate">Baby clothing set</h4>
+                                <p class="text-green-600 dark:text-green-400 font-bold mb-3">TZS 35,000-TZS 45,000</p>
+                            </div>
+                            <a href="https://wa.me/256783916256?text=Hello%2C%20I'm%20interested%20in%3A%0A%0A*Product%3A*%20Baby%20Clothing%201%0A*Price%3A*%20%35,000-45,000%0A*Image%3A*%20https%3A%2F%2Fplacehold.co%2F300x300%2Ff0f0f0%2F999%3Ftext%3DProduct%2B1" target="_blank" class="whatsapp-button">
+                                <span>Order</span>
+                                <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.504.658.67-2.431-.155-.248a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.599 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.T-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product-card bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden text-gray-900 dark:text-gray-200">
+                        <div class="aspect-square bg-gray-200 dark:bg-gray-700">
+                            <img src="images/wm4.jpg" alt="Product" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4">
+                            <div class="h-24">
+                                <h4 class="font-semibold truncate">Men and Women's short-sleeve shirts</h4>
+                                <p class="text-green-600 dark:text-green-400 font-bold mb-3">TZS 15,000</p>
+                            </div>
+                            <a href="https://wa.me/256783916256?text=Hello%2C%20I'm%20interested%20in%3A%0A%0A*Product%3A*%20Men/Women%20short-sleeveshirts%201%0A*Price%3A*%20%15,000%0A*Image%3A*%20https%3A%2F%2Fplacehold.co%2F300x300%2Ff0f0f0%2F999%3Ftext%3DProduct%2B1" target="_blank" class="whatsapp-button">
+                                <span>Order</span>
+                                <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.504.658.67-2.431-.155-.248a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.599 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.T-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product-card bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden text-gray-900 dark:text-gray-200">
+                        <div class="aspect-square bg-gray-200 dark:bg-gray-700">
+                            <img src="images/mnshs4.jpg" alt="Product" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4">
+                            <div class="h-24">
+                                <h4 class="font-semibold truncate">Timberland Waterproof Leather - Platinum</h4>
+                                <p class="text-green-600 dark:text-green-400 font-bold mb-3">TZS 100,000</p>
+                            </div>
+                            <a href="https://wa.me/256783916256?text=Hello%2C%20I'm%20interested%20in%3A%0A%0A*Product%3A*%20Waterproof%20LeatherBoot%201%0A*Price%3A*%20%100,000%0A*Image%3A*%20https%3A%2F%2Fplacehold.co%2F300x300%2Ff0f0f0%2F999%3Ftext%3DProduct%2B1" target="_blank" class="whatsapp-button">
+                                <span>Order</span>
+                                <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.504.658.67-2.431-.155-.248a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.599 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.T-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product-card bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden text-gray-900 dark:text-gray-200">
+                        <div class="aspect-square bg-gray-200 dark:bg-gray-700">
+                            <img src="images/mnshs1.jpg" alt="Product" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4">
+                            <div class="h-24">
+                                <h4 class="font-semibold truncate">Air Jordan 11 - Cool Grey</h4>
+                                <p class="text-green-600 dark:text-green-400 font-bold mb-3">TZS 75,000</p>
+                            </div>
+                            <a href="https://wa.me/256783916256?text=Hello%2C%20I'm%20interested%20in%3A%0A%0A*Product%3A*%20AirJordan11%20Shoes%201%0A*Price%3A*%20%60,000-100,000%0A*Image%3A*%20https%3A%2F%2Fplacehold.co%2F300x300%2Ff0f0f0%2F999%3Ftext%3DProduct%2B1" target="_blank" class="whatsapp-button">
+                                <span>Order</span>
+                                <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.504.658.67-2.431-.155-.248a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.599 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.T-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product-card bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden text-gray-900 dark:text-gray-200">
+                        <div class="aspect-square bg-gray-200 dark:bg-gray-700">
+                            <img src="images/wm9.jpg" alt="Product" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4">
+                            <div class="h-24">
+                                <h4 class="font-semibold truncate">women's two-piece set (track-suit)</h4>
+                                <p class="text-green-600 dark:text-green-400 font-bold mb-3">TZS 35,000</p>
+                            </div>
+                            <a href="https://wa.me/256783916256?text=Hello%2C%20I'm%20interested%20in%3A%0A%0A*Product%3A*%20Women's%20Tracksuit%201%0A*Price%3A*%20%35,000%0A*Image%3A*%20https%3A%2F%2Fplacehold.co%2F300x300%2Ff0f0f0%2F999%3Ftext%3DProduct%2B1" target="_blank" class="whatsapp-button">
+                                <span>Order</span>
+                                <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.504.658.67-2.431-.155-.248a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.599 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.T-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product-card bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden text-gray-900 dark:text-gray-200">
+                        <div class="aspect-square bg-gray-200 dark:bg-gray-700">
+                            <img src="images/wm7.jpg" alt="Product" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4">
+                            <div class="h-24">
+                                <h4 class="font-semibold truncate">women's ADIDAS two-piece set (tracksuit)</h4>
+                                <p class="text-green-600 dark:text-green-400 font-bold mb-3">TZS 35,000</p>
+                            </div>
+                            <a href="https://wa.me/256783916256?text=Hello%2C%20I'm%20interested%20in%3A%0A%0A*Product%3A*%20Women's%20Tracksuit%201%0A*Price%3A*%20%35,000%0A*Image%3A*%20https%3A%2F%2Fplacehold.co%2F300x300%2Ff0f0f0%2F999%3Ftext%3DProduct%2B1" target="_blank" class="whatsapp-button">
+                                <span>Order</span>
+                                <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.504.658.67-2.431-.155-.248a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.599 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.T-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden text-gray-900 dark:text-gray-200">
+                        <div class="aspect-square bg-gray-200 dark:bg-gray-700">
+                            <img src="images/wm6.jpg" alt="Product" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4">
+                            <div class="h-24">
+                                <h4 class="font-semibold truncate">cropped jean jackets(top)</h4>
+                                <p class="text-green-600 dark:text-green-400 font-bold mb-3">TZS 35,000-TZS 35,000</p>
+                            </div>
+                            <a href="https://wa.me/256783916256?text=Hello%2C%20I'm%20interested%20in%3A%0A%0A*Product%3A*%20Women's%20croppedJeanJacket%201%0A*Price%3A*%20%35,000%0A*Image%3A*%20https%3A%2F%2Fplacehold.co%2F300x300%2Ff0f0f0%2F999%3Ftext%3DProduct%2B1" target="_blank" class="whatsapp-button">
+                                <span>Order</span>
+                                <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.504.658.67-2.431-.155-.248a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.599 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.T-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product-card bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden text-gray-900 dark:text-gray-200">
+                        <div class="aspect-square bg-gray-200 dark:bg-gray-700">
+                            <img src="images/bb8.jpg" alt="Product" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4">
+                            <div class="h-24">
+                                <h4 class="font-semibold truncate">Baby clothing set</h4>
+                                <p class="text-green-600 dark:text-green-400 font-bold mb-3">TZS 35,000-TZS 45,000</p>
+                            </div>
+                            <a href="https://wa.me/256783916256?text=Hello%2C%20I'm%20interested%20in%3A%0A%0A*Product%3A*%20Baby%20Clothset%201%0A*Price%3A*%20%35,000-45,000%0A*Image%3A*%20https%3A%2F%2Fplacehold.co%2F300x300%2Ff0f0f0%2F999%3Ftext%3DProduct%2B1" target="_blank" class="whatsapp-button">
+                                <span>Order</span>
+                                <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.504.658.67-2.431-.155-.248a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.599 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.T-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product-card bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden text-gray-900 dark:text-gray-200">
+                        <div class="aspect-square bg-gray-200 dark:bg-gray-700">
+                            <img src="images/ms1.jpg" alt="Product" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4">
+                            <div class="h-24">
+                                <h4 class="font-semibold truncate">Hawaiian shirt(kids)</h4>
+                                <p class="text-green-600 dark:text-green-400 font-bold mb-3">TZS 15,000</p>
+                            </div>
+                            <a href="https://wa.me/256783916256?text=Hello%2C%20I'm%20interested%20in%3A%0A%0A*Product%3A*%20Women's%20Hawaiianshirt(kids)%201%0A*Price%3A*%20%15,000%0A*Image%3A*%20https%3A%2F%2Fplacehold.co%2F300x300%2Ff0f0f0%2F999%3Ftext%3DProduct%2B1" target="_blank" class="whatsapp-button">
+                                <span>Order</span>
+                                <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.504.658.67-2.431-.155-.248a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.599 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.T-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="product-card bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden text-gray-900 dark:text-gray-200">
+                        <div class="aspect-square bg-gray-200 dark:bg-gray-700">
+                            <img src="images/ms3.jpg" alt="Product" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-4">
+                            <div class="h-24">
+                                <h4 class="font-semibold truncate">Hawaiian shirt(adults)</h4>
+                                <p class="text-green-600 dark:text-green-400 font-bold mb-3">TZS 15,000</p>
+                            </div>
+                            <a href="https://wa.me/256783916256?text=Hello%2C%20I'm%20interested%20in%3A%0A%0A*Product%3A*%20Hawaiian%20Shirt(adults)%201%0A*Price%3A*%20%35,000-45,000%0A*Image%3A*%20https%3A%2F%2Fplacehold.co%2F300x300%2Ff0f0f0%2F999%3Ftext%3DProduct%2B1" target="_blank" class="whatsapp-button">
+                                <span>Order</span>
+                                <svg class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.504.658.67-2.431-.155-.248a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.599 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.T-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-300 dark:bg-gray-800 mt-16 shadow-inner pt-12 pb-8">
+        <div class="container mx-auto max-w-5xl p-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div>
+                <h5 class="text-lg font-semibold mb-3">About Us</h5>
+                <p class="text-gray-600 dark:text-gray-400">Our price, your Price.Your Style delivered.</p>
+            </div>
+
+            <div>
+                <h5 class="text-lg font-semibold mb-3">Contact</h5>
+                <ul class="space-y-2 text-gray-600 dark:text-gray-400">
+                    <li>
+                        Email: <a href="mailto:macklite86@gmail.com" class="hover:text-sky-600">macklite86@gmail.com</a>
+                    </li>
+                    <li>
+                        Phone: <a href="tel:+256783916256" class="hover:text-sky-600">+256-783-916-256</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="text-lg font-semibold mb-3">Location</h5>
+                <p class="text-gray-600 dark:text-gray-400">coming soon</p>
+            </div>
+
+        </div>
+        <div class="text-center text-gray-500 dark:text-gray-400 mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
+            &copy; <span id="current-year">2025</span> Top Stylist Boutique C.E.O MACK LITE. All Rights Reserved.
+            
+            <p class="text-sm mt-2">
+                Want a website like this? Contact us using this whatsapp link👉👉👉
+                <a href="https://wa.me/256758776560?text=Hello%2C%20I%20saw%20the%20Believer%20Collections%20website%20and%20I'm%20interested%20in%20your%20services." 
+                   class="text-blue-500 hover:text-blue-400" 
+                   target="_blank">
+                    Contact the developer
+                </a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
