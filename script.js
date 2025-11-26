@@ -159,3 +159,25 @@ document.addEventListener('DOMContentLoaded', () => {
         startInterval(); // Start the automatic sliding
     }
 });
+// SEARCH FUNCTIONALITY
+document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('search-input');
+    
+    if(searchInput) {
+        searchInput.addEventListener('keyup', function() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const productCards = document.querySelectorAll('.product-card');
+
+            productCards.forEach(card => {
+                // Look for the product name inside the h4 tag
+                const productName = card.querySelector('h4').textContent.toLowerCase();
+                
+                if (productName.includes(searchTerm)) {
+                    card.style.display = "block"; // Show card
+                } else {
+                    card.style.display = "none"; // Hide card
+                }
+            });
+        });
+    }
+});
