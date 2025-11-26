@@ -2,7 +2,7 @@
 
 > **"Our Promise, Your Price."**
 
-![Banner Placeholder](https://placehold.co/1000x300/black/white?text=Top+Stylist+Boutique+Coming+Soon)
+![Top Stylist Boutique](images/logo.png)
 
 ---
 
