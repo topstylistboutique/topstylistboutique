@@ -111,6 +111,9 @@
         </section>
 <a href="https://example.comhttps://www.effectivegatecpm.com/depur1ye?key=9dd76d52fbbb7c2197db2b2d32a35e91">Juicy Offers</a>
         <section>
+
+     <div id="page-1" class="product-page active-page">
+			
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
                 
                 <div class="product-card bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
@@ -1111,6 +1114,13 @@
 <script type="text/javascript" src="//www.highperformanceformat.com/2c25c839b4f231ab543bea6b0d8ab9c5/invoke.js"></script>
 					</div>
 
+			</div>
+	 </div>
+
+			 
+			<div id="page-2" class="product-page">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+
                 <div class="product-card bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden">
                     <div class="aspect-square bg-gray-200 dark:bg-gray-700">
                         <img src="images/wm33.jpg" alt="Product" class="w-full h-full object-cover">
@@ -1142,9 +1152,48 @@
                         </a>
                     </div>
                 </div>
-            </div> 
+            </div>
+			</div>
         </section> 
-    </main> 
+    </main>
+	<nav class="pagination-controls">
+    <a href="#" class="page-link active" data-page="1">1</a>
+    <a href="#" class="page-link" data-page="2">2</a>
+</nav>
+
+<script>
+    // ... insert the JavaScript code from step 3 of the previous answer ...
+
+	document.addEventListener('DOMContentLoaded', function() {
+    const pageLinks = document.querySelectorAll('.page-link');
+    const productPages = document.querySelectorAll('.product-page');
+
+    pageLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault(); // Stop the link from jumping/reloading
+
+            const pageNumber = this.getAttribute('data-page'); // Gets '1' or '2'
+            const targetPageId = `page-${pageNumber}`; // Creates 'page-1' or 'page-2'
+
+            // --- 1. Update Product Visibility ---
+            productPages.forEach(page => {
+                // Hide ALL pages first
+                page.classList.remove('active-page');
+            });
+
+            // Show ONLY the target page
+            const targetPage = document.getElementById(targetPageId);
+            if (targetPage) {
+                targetPage.classList.add('active-page');
+            }
+
+            // --- 2. Update Link Highlight ---
+            pageLinks.forEach(p => p.classList.remove('active')); // Remove highlight from all links
+            this.classList.add('active'); // Add highlight to the clicked link
+        });
+    });
+});
+</script>
     <script async="async" data-cfasync="false" src="//pl28133394.effectivegatecpm.com/ad96f2b603f73d07d39f21f9a5d2212c/invoke.js"></script>
 <div id="container-ad96f2b603f73d07d39f21f9a5d2212c"></div>
 
