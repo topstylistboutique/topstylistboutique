@@ -223,3 +223,36 @@ html.dark .slider-dot.active {
     margin-top: 20px; 
     margin-bottom: 20px;
 }
+
+/* Ensure the products are laid out correctly (e.g., in a grid/flexbox) */
+.product-page {
+    display: flex; /* Assuming your products are using flex or grid layout */
+    flex-wrap: wrap;
+    /* This rule is crucial: it hides any page that doesn't have the 'active-page' class */
+    display: none; 
+}
+
+/* This rule shows the page that has the 'active-page' class */
+.product-page.active-page {
+    display: flex; /* Or whatever layout you use (e.g., grid) */
+}
+
+/* Basic styling for the pagination numbers */
+.pagination-controls {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.page-link {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.page-link.active {
+    background-color: #333;
+    color: white;
+    border-color: #333;
+}
