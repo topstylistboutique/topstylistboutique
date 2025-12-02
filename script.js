@@ -213,12 +213,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // 3. Construct the ABSOLUTE image URL (e.g., 'https://.../images/wm1-min.jpg')
             const productImageUrl = domain + relativeImgSrc; 
 
-            // 4. Construct the full message text (using URL encoding for new lines and spaces)
-            // We now call it 'Image Link' since it links directly to the image.
-            const message = `Hello, I'm interested in:%0A%0A` +
-                            `Product: ${name}%0A` +
-                            `Price: ${price}%0A` +
-                            `Image Link: ${productImageUrl}`;
+            // 4. CONSTRUCT THE MESSAGE USING NEWLINES (\n)
+            // The template literal (backticks) and \n replace the messy %0A codes.
+            const message = `Hello, I'm interested in:
+
+Product: ${name}
+Price: ${price}
+Image Link: ${productImageUrl}`;
 
             // 5. Construct the final WhatsApp href link
             const finalHref = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
