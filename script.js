@@ -229,3 +229,38 @@ Image Link: ${productImageUrl}`;
         }
     });
 });
+
+// Get references to the button and the display area
+const button = document.getElementById('tracking-button');
+const clickCountDisplay = document.getElementById('click-count');
+
+// Load the stored count from the user's browser (Local Storage)
+let count = localStorage.getItem('monetagButtonClicks');
+
+// If no count exists, start at 0
+if (count === null) {
+    count = 0;
+} else {
+    // Convert the stored string back to a number
+    count = parseInt(count);
+}
+
+// Update the display with the current count
+clickCountDisplay.textContent = count;
+
+// Add the event listener to the button
+// We check if the button exists before trying to attach the listener
+if (button) {
+    button.addEventListener('click', function() {
+        // Increment the count
+        count++;
+        
+        // Update the display immediately
+        clickCountDisplay.textContent = count;
+        
+        // Save the new count back to Local Storage
+        localStorage.setItem('monetagButtonClicks', count);
+        
+        // The link's default action (opening the URL) will happen next
+    });
+}
